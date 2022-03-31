@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tacom</string>
+    <string name="hint_nome">Inserir nome</string>
+    <string name="hint_sobre_nome">Inserir sobrenome</string>
+    <string name="listar_usuario_link"><u>Usuários cadastrados</u></string>
+    <string name="hint_titulo">Cadastro de usuário</string>
+    <string name="hint_button">Cadastrar usuário</string>
+</resources>
