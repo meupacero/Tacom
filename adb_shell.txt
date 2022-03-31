@@ -1,0 +1,44 @@
+a. Criar um arquivo vazio de nome teste
+	mkdir -p /sdcard/mnt/Tacom ("p" é usado para criar diretorio de forma recursiva)
+	cd /sdcard/mnt/Tacom (Acessa diretorio criado anteriormente)
+	touch teste (Cria arquivo com nome teste)
+	
+b. exibir o conteúdo do arquivo
+	cat teste
+	
+e. inserir conteúdo em arquivo
+	echo "TESTE" > teste
+
+g. fazer download do arquivo teste
+	adb pull /sdcard/mnt/Tacom/teste E:/Documentos
+	
+h. fazer upload do arquivo teste2 para o diretódio /mnt/Tacom
+	adb push E:/Documentos/teste2 /sdcard/mnt/Tacom/
+	
+j. filtrar pelo logcat por determinado conteúdo
+	logcat | grep -E "conteúdo"
+	
+k. apagar o arquivo teste
+	rm /sdcard/mnt/Tacom/teste
+	
+l. criar um diretório MeuDiretorio
+	mkdir -p /sdcard/MeuDiretorio
+	
+m. apagar o diretório MeuDiretorio
+	rmdir /sdcard/MeuDiretorio
+
+n. iniciar uma Activity através do terminal
+	am start -n nome.pacote/nome.pacote.activity
+	
+o. iniciar um Service através do terminal
+	adb shell am startservice nome.pacote/nome.pacote.Service
+	
+p. parar um Service através do terminal
+	adb shell am stopservice nome.pacote/nome.pacote.Service
+	adb shell am force-stop nome.pacote
+	 
+q. instalar uma apk através do terminal
+	adb install app.apk
+	
+r. desinstalar uma apk através do terminal
+	adb uninstall nome.pacote
